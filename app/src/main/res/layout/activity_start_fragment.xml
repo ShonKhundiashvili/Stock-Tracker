@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/pexels2"
+
+    android:id="@+id/StartFragment"
+    tools:context=".ui.single_character.StartFragment">
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp"/>
+
+    <Button
+        android:layout_marginTop="600dp"
+        android:id="@+id/allStocks"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/favorite_stocks2"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:backgroundTint="#ADC2A9"/>
+
+</LinearLayout>

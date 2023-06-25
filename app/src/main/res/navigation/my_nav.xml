@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/startFragment"
+    android:id="@+id/my_nav">
+
+    <fragment
+        android:id="@+id/allItemsFragment"
+        android:name="com.example.buildingblocks.ui.all_characters.AllItemsFragment"
+        android:label="all_items"
+        tools:layout="@layout/all_items">
+        <action
+            android:id="@+id/action_allItemsFragment_to_addItemFragment"
+            app:destination="@id/addItemFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_allItemsFragment_to_stockDetails"
+            app:destination="@id/stockDetails"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="com.example.buildingblocks.ui.AddItemFragment"
+        android:label="add_item"
+        tools:layout="@layout/add_item">
+        <action
+            android:id="@+id/action_addItemFragment_to_allItemsFragment"
+            app:destination="@id/allItemsFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+            app:popUpTo="@id/allItemsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/stockDetails"
+        android:name="com.example.buildingblocks.ui.single_character.StockDetailsFragment"
+        android:label="StockDetails"
+        tools:layout="@layout/stock_details">
+        <action
+            android:id="@+id/action_stockDetails_to_newsFragment2"
+            app:destination="@id/newsFragment2"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.buildingblocks.ui.single_character.StartFragment"
+        android:label="activity_start_fragment"
+        tools:layout="@layout/activity_start_fragment" >
+        <action
+            android:id="@+id/action_startFragment_to_allItemsFragment"
+            app:destination="@id/allItemsFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment2"
+        android:name="com.example.buildingblocks.ui.single_character.NewsFragment"
+        android:label="activity_news_fragment"
+        tools:layout="@layout/activity_news_fragment" />
+</navigation>

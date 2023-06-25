@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Stock Tracker</string>
+    <string name="enter_company_name">* Enter company name</string>
+    <string name="enter_stock_price">* Enter stock price</string>
+    <string name="pick_logo">Pick logo</string>
+    <string name="confirm">Confirm</string>
+    <string name="add_stock">add stock</string>
+    <string name="price">Price</string>
+    <string name="item_detailed_description">Item detailed description</string>
+    <string name="main_item_title">Main item title</string>
+    <string name="title">Title</string>
+    <string name="description">description</string>
+    <string name="price_stock_details">price</string>
+    <string name="enter_stock_symbol">* Enter stock symbol</string>
+    <string name="search_stock">Search stock</string>
+    <string name="stock_news">stock news</string>
+    <string name="news">News</string>
+    <string name="hello_user">Hello User</string>
+    <string name="add_stock_add">Add Stock</string>
+    <string name="enter_the_symbol_of_the_stock">* Enter the symbol of the stock</string>
+    <string name="your_favorite_stocks">Your favorite stocks</string>
+    <string name="favorite_stocks">Favorite Stocks</string>
+    <string name="all_stocks">All stocks</string>
+    <string name="welcome_to_stock_tracker">Welcome to stock tracker</string>
+    <string name="search_and_add_stock">Search and add stock</string>
+    <string name="for_example_tsla">* For example TSLA</string>
+    <string name="favorite_stocks2">Favorite Stocks</string>
+</resources>

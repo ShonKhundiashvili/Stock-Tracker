@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "610657055331",
+    "project_id": "stock-tracker-a603e",
+    "storage_bucket": "stock-tracker-a603e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610657055331:android:8a85d652f4bed875803e56",
+        "android_client_info": {
+          "package_name": "com.example.buildingblocks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610657055331-h3kb0qhievrhl3v44qvtenn5sogapep1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQDRYNn_nRlajDdQXVAFZ4ppVNT31Lqkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610657055331-h3kb0qhievrhl3v44qvtenn5sogapep1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

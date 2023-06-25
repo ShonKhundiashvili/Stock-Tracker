@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.single_character.StockDetailsFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#E1ECC8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemTitle"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="@string/title"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/price_stock_details"
+                android:gravity="center"
+                android:textSize="25dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"/>
+
+            <TextView
+                android:id="@+id/volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="volume"
+                android:gravity="center"
+                android:textSize="25dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"/>
+
+            <TextView
+                android:id="@+id/high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="high"
+                android:gravity="center"
+                android:textSize="25dp"
+                />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"/>
+
+            <TextView
+                android:id="@+id/low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="low"
+                android:gravity="center"
+                android:textSize="25sp"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="15dp"
+                android:id="@+id/stock_image"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="60dp"/>
+
+            <Button
+                android:id="@+id/stockNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/stock_news"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

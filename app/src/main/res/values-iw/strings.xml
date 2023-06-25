@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">אבני בניין</string>
+    <string name="enter_company_name">הכנס שם חברה</string>
+    <string name="enter_stock_price">הכנס מחיר מנייה</string>
+    <string name="enter_stock_symbol">הכנס סמל מנייה</string>
+    <string name="pick_logo">בחר לוגו</string>
+    <string name="confirm">אישור</string>
+    <string name="add_stock">הוספת מנייה</string>
+    <string name="price">מחיר</string>
+    <string name="item_detailed_description">תיאור מפורט של הפריט</string>
+    <string name="main_item_title">כותרת הפריט הראשי</string>
+    <string name="title">כותרת</string>
+    <string name="description">תיאור</string>
+    <string name="price_stock_details">מחיר</string>
+</resources>
