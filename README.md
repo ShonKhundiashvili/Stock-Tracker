@@ -2,7 +2,7 @@
 
 The Stock Search application is designed to provide users with a convenient way to search for stocks, add them to their list of favorites, and access detailed information about individual stocks. The application utilizes real-time data to ensure accurate and up-to-date information about the stocks. In addition, it offers news updates tailored to each stock in the user's investment portfolio, enabling them to make informed investment decisions. With easy inventory management features, users can effortlessly add or remove stocks from their home screen and track multiple stocks to manage their portfolio efficiently.
 
-Features
+# Features
 The Stock Search application offers the following key features:
 
 Stock Search: Users can quickly search for stocks by their names. The application provides a user-friendly interface for efficient stock search.
