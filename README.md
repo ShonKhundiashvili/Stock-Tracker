@@ -15,6 +15,10 @@ News Updates: The application provides timely and relevant news articles that ar
 
 Easy Inventory Management: Users can effortlessly manage their stock portfolio by adding or removing stocks from their home screen. The application offers a swipe-right functionality to make the inventory management process intuitive and efficient.
 
+# Technologies Used
+Firebase: The Firebase platform is used for data storage, retrieval, and real-time synchronization between the app and the database.
+Web Crawling: Web crawling techniques are employed to scrape and extract company logos from websites.
+
 # Presentation
 [StockTracker.pdf](https://github.com/ShonKhundiashvili/Stock-Tracker-App/files/11884982/StockTracker.pdf)
 
