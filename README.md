@@ -14,3 +14,5 @@ Detailed Stock Information: By clicking on a specific stock, users can access de
 News Updates: The application provides timely and relevant news articles that are specifically tailored to each stock in the user's investment portfolio. This feature ensures that users stay updated with the latest news related to their stocks, facilitating well-informed investment decisions.
 
 Easy Inventory Management: Users can effortlessly manage their stock portfolio by adding or removing stocks from their home screen. The application offers a swipe-right functionality to make the inventory management process intuitive and efficient.
+
+
