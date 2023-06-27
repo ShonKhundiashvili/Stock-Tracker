@@ -30,7 +30,7 @@
         android:layout_gravity="center"
         android:id="@+id/tv_stock_url"
         android:textSize="20sp"
-        android:text="The url to the news is: "/>
+        android:text="@string/the_url_to_the_news_is"/>
 
     <TextView
         android:layout_marginTop="20dp"

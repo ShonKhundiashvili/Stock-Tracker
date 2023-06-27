@@ -25,4 +25,10 @@
     <string name="search_and_add_stock">Search and add stock</string>
     <string name="for_example_tsla">* For example TSLA</string>
     <string name="favorite_stocks2">Favorite Stocks</string>
+    <string name="volume">volume</string>
+    <string name="high">high</string>
+    <string name="low">low</string>
+    <string name="news_title">News Title</string>
+    <string name="link">Link</string>
+    <string name="the_url_to_the_news_is">The url to the news is:</string>
 </resources>

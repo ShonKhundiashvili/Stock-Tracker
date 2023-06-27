@@ -37,7 +37,7 @@
                 android:layout_gravity="center"
                 android:text="@string/price_stock_details"
                 android:gravity="center"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 />
 
             <Space
@@ -49,9 +49,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="volume"
+                android:text="@string/volume"
                 android:gravity="center"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 />
 
             <Space
@@ -63,9 +63,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="high"
+                android:text="@string/high"
                 android:gravity="center"
-                android:textSize="25dp"
+                android:textSize="25sp"
                 />
 
             <Space
@@ -77,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="low"
+                android:text="@string/low"
                 android:gravity="center"
                 android:textSize="25sp"
                 />

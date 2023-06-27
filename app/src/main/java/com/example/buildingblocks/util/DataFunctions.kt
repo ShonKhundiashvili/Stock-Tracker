@@ -3,8 +3,6 @@ package il.co.syntax.finalkotlinproject.utils
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
 import androidx.lifecycle.map
-import com.example.buildingblocks.Item
-import com.example.buildingblocks.data.model.AlphaResponse
 import kotlinx.coroutines.Dispatchers
 
 fun <T,A> performFetchingAndSaving(localDbFetch: () -> LiveData<T>,

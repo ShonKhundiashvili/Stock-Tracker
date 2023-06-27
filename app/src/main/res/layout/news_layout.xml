@@ -23,7 +23,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="News Title"
+                android:text="@string/news_title"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:id="@+id/item_title"
@@ -33,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:text="Link"
+                android:text="@string/link"
                 android:id="@+id/item_description"
                 android:layout_marginTop="12dp"/>
         </LinearLayout>

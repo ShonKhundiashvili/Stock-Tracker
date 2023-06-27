@@ -1,5 +1,7 @@
 package com.example.buildingblocks.ui.all_characters
 import android.app.AlertDialog
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -133,31 +135,23 @@ class AllItemsFragment : Fragment() {
             }
         }
         viewModel.symbol.observe(viewLifecycleOwner) {
-
             viewModel.printData()
 
+            val status = it.status
 
-            when (val status = it.status) {
+            when (status) {
                 is Loading -> {
 
                 }
 
                 is Success -> {
-                    if (status.data == null) {
-                        Toast.makeText(requireContext(), "The stock you have entered does not exist", Toast.LENGTH_SHORT).show()
-                    }
                     viewModel.getItems()
-                }
-
-                is Error -> {
-                    Toast.makeText(requireContext(), status.message, Toast.LENGTH_SHORT).show()
                 }
 
                 else -> {
 
                 }
             }
-
         }
     }
 
@@ -207,5 +201,3 @@ class AllItemsFragment : Fragment() {
         itemAdapter.setItems(filteredList)
     }
 }
-
-private const val TAG = "AllItemsFragment"

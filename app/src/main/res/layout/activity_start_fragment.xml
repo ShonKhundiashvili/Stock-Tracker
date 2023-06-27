@@ -18,7 +18,7 @@
         android:layout_marginTop="600dp"
         android:id="@+id/allStocks"
         android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:text="@string/favorite_stocks2"
         android:layout_gravity="center"
         android:textColor="@color/black"

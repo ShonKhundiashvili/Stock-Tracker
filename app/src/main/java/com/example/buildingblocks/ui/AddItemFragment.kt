@@ -23,21 +23,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class AddItemFragment : Fragment() {
     private var _binding :AddItemBinding? = null
     private val binding get() = _binding!!
-
     private val viewModel : ItemsViewModel by activityViewModels()
-
-    private var database: DatabaseReference? = null
-
-
-    private var imageUri : Uri? = null
-    val pickImageLauncher : ActivityResultLauncher<Array<String>> =
-        registerForActivityResult(ActivityResultContracts.OpenDocument()){
-            if (it != null) {
-                requireActivity().contentResolver.takePersistableUriPermission(it, Intent.FLAG_GRANT_READ_URI_PERMISSION)
-                imageUri = it
-            }
-        }
-
 
     override fun onCreateView(
         inflater: LayoutInflater,

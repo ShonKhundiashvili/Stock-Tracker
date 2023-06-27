@@ -1,11 +1,9 @@
 package com.example.buildingblocks.data.model.repository
 
 import android.content.Context
-import android.content.Context.MODE_PRIVATE
 import androidx.lifecycle.MutableLiveData
 import com.example.buildingblocks.Item
 import com.example.buildingblocks.data.model.local_db.ItemDao
-import com.example.buildingblocks.data.model.models.Stock
 import com.example.buildingblocks.data.model.retrofit.StockRemoteDataSource
 import com.example.buildingblocks.data.model.retrofit.stockInfo.StockInfo
 import com.example.buildingblocks.data.model.retrofit.stockInfo.model.StockUrlData
@@ -14,7 +12,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.launch
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -44,7 +41,7 @@ class ItemRepository @Inject constructor(
 
     fun getStock(name: String, image: String) = performFetchingAndSaving(
         { localDataSource.getItem(name) },
-        { remoteDataSource.getStock(name) },
+        { remoteDataSource.getStock(name, context) },
         { data ->
             if(data.responseTimeSeries == null) {
                 mutableLiveData.postValue(false)

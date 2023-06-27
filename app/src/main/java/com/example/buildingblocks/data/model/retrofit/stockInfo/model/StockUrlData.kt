@@ -51,8 +51,8 @@ data class Datum(
     val publishedAt: String,
     val source: String,
     @SerializedName("relevance_score")
-    val relevanceScore: Any?, // Use 'Any?' if the field can be null
+    val relevanceScore: Any?,
     val entities: List<Entity>,
-    val similar: List<Any> // Change the type to the appropriate data class if 'similar' has a defined structure
+    val similar: List<Any>
 )
 

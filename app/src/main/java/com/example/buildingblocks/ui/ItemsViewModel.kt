@@ -9,9 +9,7 @@ import com.example.buildingblocks.data.model.repository.ItemRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
-import okhttp3.Dispatcher
 import javax.inject.Inject
 
 @HiltViewModel
@@ -27,6 +25,7 @@ class ItemsViewModel @Inject constructor (private val repository: ItemRepository
     val symbol = Transformations.switchMap(_symbol) {
         repository.getStock(it, image.value)
     }
+
 
     init {
         getItems()

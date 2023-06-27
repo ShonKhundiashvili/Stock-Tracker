@@ -13,4 +13,23 @@
     <string name="title">כותרת</string>
     <string name="description">תיאור</string>
     <string name="price_stock_details">מחיר</string>
+    <string name="search_stock">חיפוש מנייה</string>
+    <string name="stock_news">חדשות המנייה</string>
+    <string name="news">חדשות</string>
+    <string name="hello_user">שלום משתמש</string>
+    <string name="add_stock_add">הוסף מנייה</string>
+    <string name="enter_the_symbol_of_the_stock">* הכנס את הסמל המנייה</string>
+    <string name="your_favorite_stocks">מניות אהובות</string>
+    <string name="all_stocks">כל המניות</string>
+    <string name="favorite_stocks">מניות מועדפות</string>
+    <string name="welcome_to_stock_tracker">ברוכים הבאים למעקב מניות</string>
+    <string name="search_and_add_stock">חפש והוסף מנייה</string>
+    <string name="for_example_tsla">* לדוגמה TSLA</string>
+    <string name="favorite_stocks2">מניות מועדפות</string>
+    <string name="volume">נפח</string>
+    <string name="high">מחיר הגבוה ביותר</string>
+    <string name="low">מחיר נמוך ביותר</string>
+    <string name="news_title">כותרת החדשות</string>
+    <string name="link">קישור</string>
+    <string name="the_url_to_the_news_is">הקישור לחדשות הוא:</string>
 </resources>
