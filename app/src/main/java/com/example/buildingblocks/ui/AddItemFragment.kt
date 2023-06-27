@@ -1,29 +1,24 @@
 package com.example.buildingblocks.ui
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import android.widget.Toast
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.buildingblocks.data.model.models.Image
 import com.example.buildingblocks.databinding.AddItemBinding
-import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class AddItemFragment : Fragment() {
-    private var _binding :AddItemBinding? = null
+    private var _binding: AddItemBinding? = null
     private val binding get() = _binding!!
-    private val viewModel : ItemsViewModel by activityViewModels()
+    private val viewModel: ItemsViewModel by activityViewModels()
+    private lateinit var loadingProgressBar: ProgressBar
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,6 +26,8 @@ class AddItemFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = AddItemBinding.inflate(inflater, container, false)
+        loadingProgressBar = binding.loadingProgressBar
+        loadingProgressBar.visibility = View.GONE
 
         binding.finishBtn.setOnClickListener {
             val enteredSymbol = binding.itemTitle.text.toString().uppercase()
@@ -42,8 +39,12 @@ class AddItemFragment : Fragment() {
                 return@setOnClickListener
             }
 
+            loadingProgressBar.visibility = View.VISIBLE
+
             val database = FirebaseDatabase.getInstance().getReference(enteredSymbol)
             database.get().addOnSuccessListener { snapshot ->
+                loadingProgressBar.visibility = View.GONE
+
                 snapshot.getValue(Image::class.java).apply {
                     viewModel.setImage(this?.B ?: "")
                     viewModel.setSymbol(enteredSymbol)
@@ -51,15 +52,12 @@ class AddItemFragment : Fragment() {
                     findNavController().popBackStack()
                 }
             }.addOnFailureListener {
+                loadingProgressBar.visibility = View.GONE
                 Toast.makeText(requireContext(), "Failed connecting to the server, please try again later", Toast.LENGTH_SHORT).show()
             }
         }
 
         return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
     }
 
     override fun onDestroyView() {
