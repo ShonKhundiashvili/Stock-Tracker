@@ -15,7 +15,7 @@ News Updates: The application provides timely and relevant news articles that ar
 
 Easy Inventory Management: Users can effortlessly manage their stock portfolio by adding or removing stocks from their home screen. The application offers a swipe-right functionality to make the inventory management process intuitive and efficient.
 
-#Presentation
+# Presentation
 [StockTracker.pdf](https://github.com/ShonKhundiashvili/Stock-Tracker-App/files/11884982/StockTracker.pdf)
 
 
